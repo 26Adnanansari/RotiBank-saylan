@@ -25,6 +25,39 @@
         <![endif]-->
 </head>
 
+
+
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" const
+    dfMessenger=document.querySelector('df-messenger'); 
+    const payload=[ 
+    {   "type" : "info" ,
+        "title" : "Info item title" ,
+         "subtitle" : "Info item subtitle" ,
+         "image" : { "src" : { "rawUrl" : "https://example.com/images/logo.png" }
+    },  
+         "actionLink" : "https://example.com" }]; dfMessenger.renderCustomCard(payload);></script>
+<script>
+    const dfMessenger = document.querySelector('df-messenger');
+    dfMessenger.addEventListener('df-messenger-loaded', function (event) {
+        console.log('Messenger loaded');
+    });
+</script>
+<df-messenger intent="WELCOME" chat-title="Saylani-Chatbot" agent-id="6a6ee4e0-36f6-4dd5-b2ce-1ca7d3a77392"
+    language-code="en" chat-icon="saylani-logo-50x50.png"></df-messenger>
+
+<style>
+    df-messenger {
+        --df-messenger-bot-message: #878fac;
+        --df-messenger-button-titlebar-color: #63be59;
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #878fac;
+        --df-messenger-user-message: #63be59;
+    }
+</style>
+
 <body>
     <div class="page-wrapper">
         <!-- Preloader -->
@@ -115,7 +148,113 @@
             </nav><!-- Navbar end -->
         </header><!-- Header end -->
 
+        <section id="home" class="home">
+            <!-- Carousel -->
+            <div id="carousel" class="centercarousel slide" data-ride="carousel">
+                <!-- Carousel-inner -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/1.jpg" alt="Construction">
+                        <!-- <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>We Empower Future Innovators</h3>
+                                <h1>SMIT IT Training</h1>
+                                <h1 class="second_heading">Free & Impactful</h1>
+                                <p>Join SMIT to master IT skills like Web Development and Graphic Design for free.
+                                    Transform your future with Saylani’s mission to create global software leaders.</p>
+                                <a class="btn know_btn">know more</a>
+                                <a class="btn know_btn">view project</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="images/2.jpg" alt="Construction">
+                        <!-- <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>Skills For Digital Careers</h3>
+                                <h1>SMIT Courses</h1>
+                                <h1 class="second_heading">Tech & Growth</h1>
+                                <p>Learn Web, Mobile, and Graphic Design skills with SMIT's free courses. Build your
+                                    future in Pakistan's growing tech industry with expert training.</p>
+                                <a class="btn know_btn">know more</a>
+                                <a class="btn know_btn">view project</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="images/3.jpg" alt="Construction">
+                        <!-- <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>Join Our Tech Community</h3>
+                                <h1>SMIT Network</h1>
+                                <h1 class="second_heading">Learn & Connect</h1>
+                                <p>Collaborate with peers, learn from experts, and build a strong professional network
+                                    at SMIT. Grow together in Pakistan's digital future.</p>
+                                <a class="btn know_btn">know more</a>
+                                <a class="btn know_btn">view project</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="images/4.jpg" alt="Construction">
+                        <!-- <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>Join Our Tech Community</h3>
+                                <h1>SMIT Network</h1>
+                                <h1 class="second_heading">Learn & Connect</h1>
+                                <p>Collaborate with peers, learn from experts, and build a strong professional network
+                                    at SMIT. Grow together in Pakistan's digital future.</p>
+                                <a class="btn know_btn">know more</a>
+                                <a class="btn know_btn">view project</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="images/5.jpg" alt="Construction">
+                        <!-- <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>Join Our Tech Community</h3>
+                                <h1>SMIT Network</h1>
+                                <h1 class="second_heading">Learn & Connect</h1>
+                                <p>Collaborate with peers, learn from experts, and build a strong professional network
+                                    at SMIT. Grow together in Pakistan's digital future.</p>
+                                <a class="btn know_btn">know more</a>
+                                <a class="btn know_btn">view project</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="item">
+                        <img src="images/6.jpg" alt="Construction">
+                        <!-- <div class="overlay">
+                            <div class="carousel-caption">
+                                <h3>Join Our Tech Community</h3>
+                                <h1>SMIT Network</h1>
+                                <h1 class="second_heading">Learn & Connect</h1>
+                                <p>Collaborate with peers, learn from experts, and build a strong professional network
+                                    at SMIT. Grow together in Pakistan's digital future.</p>
+                                <a class="btn know_btn">know more</a>
+                                <a class="btn know_btn">view project</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div><!-- Carousel-inner end -->
 
+
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="fa fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="fa fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div><!-- Carousel end-->
+
+        </section> 
+        
+        
         <section id="home" class="home">
             <!-- Carousel -->
             <div id="carousel" class="centercarousel slide" data-ride="carousel">
@@ -179,8 +318,6 @@
             </div><!-- Carousel end-->
 
         </section>
-
-
         <!-- About -->
         <section id="about">
             <div class="container about_bg">
@@ -377,7 +514,7 @@
                                     </p><br>
                                 </div>
                                 <img src="images/testimonial_img1.png" alt="Testimonial" />
-                                <p class="worker_name">john smith</p>
+                                <p class="worker_name">Mr. Anus</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -391,7 +528,7 @@
                                     </p>
                                 </div>
                                 <img src="images/testimonial_img2.png" alt="Testimonial" />
-                                <p class="worker_name">john smith</p>
+                                <p class="worker_name">Mr. Hammad Sheikh</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -403,8 +540,8 @@
                                         to real-world IT jobs, and I'm very grateful for this opportunity."
                                     </p>
                                 </div>
-                                <img src="images/testimonial_img1.png" alt="Testimonial" />
-                                <p class="worker_name">john smith</p>
+                                <img src="images/testimonial_img3.png" alt="Testimonial" />
+                                <p class="worker_name">Mr .Sabir</p>
                             </div>
                         </div>
                     </div>
@@ -480,10 +617,14 @@
                             <h4>Latest post</h4>
                             <h4>Latest Updates</h4>
                             <ul class="list-unstyled post">
-                                <li><a href=""><span class="date">15 <small>NOV</small></span> SMIT Graduates Secure Top IT Jobs</a></li>
-                                <li><a href=""><span class="date">10 <small>NOV</small></span> New Web Development Course Announced</a></li>
-                                <li><a href=""><span class="date">05 <small>NOV</small></span> SMIT Hosts Successful Tech Career Fair</a></li>
-                                <li><a href=""><span class="date">01 <small>NOV</small></span> Student Spotlight: Award-Winning Project</a></li>
+                                <li><a href=""><span class="date">15 <small>NOV</small></span> SMIT Graduates Secure Top
+                                        IT Jobs</a></li>
+                                <li><a href=""><span class="date">10 <small>NOV</small></span> New Web Development
+                                        Course Announced</a></li>
+                                <li><a href=""><span class="date">05 <small>NOV</small></span> SMIT Hosts Successful
+                                        Tech Career Fair</a></li>
+                                <li><a href=""><span class="date">01 <small>NOV</small></span> Student Spotlight:
+                                        Award-Winning Project</a></li>
                             </ul>
                         </div>
                     </div>
@@ -491,7 +632,8 @@
                         <div class="footer_item">
                             <h4>Contact Us</h4>
                             <ul class="list-unstyled footer_contact">
-                                <li><a href=""><span class="fa fa-map-marker"></span> Saylani Welfare Head Office, Bahadurabad Chowrangi Karachi</a></li>
+                                <li><a href=""><span class="fa fa-map-marker"></span> Saylani Welfare Head Office,
+                                        Bahadurabad Chowrangi Karachi</a></li>
                                 <li><a href=""><span class="fa fa-envelope"></span> info@saylaniwelfare.com</a></li>
                                 <li><a href=""><span class="fa fa-phone"></span>
                                         <p>+92 (21) 111-729-526</p>
@@ -505,9 +647,9 @@
             <!-- Footer bottom -->
             <div class="footer_bottom text-center">
                 <p class="wow fadeInRight">
-                    Made with 
+                    Made with
                     <i class="fa fa-heart"></i>
-                    by 
+                    by
                     <a target="_blank" href="https://github.com/26Adnanansari">Adnan Ansari</a>
                     2024. All Rights Reserved
                 </p>
