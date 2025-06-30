@@ -24,39 +24,23 @@
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
+<
 
 
-
-
-
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" const
-    dfMessenger=document.querySelector('df-messenger'); const payload=[ { "type" : "info" , "title" : "Info item title"
-    , "subtitle" : "Info item subtitle" , "image" : { "src" : { "rawUrl" : "https://example.com/images/logo.png" }
-    }, "actionLink" : "https://example.com" }]; dfMessenger.renderCustomCard(payload);></script>
-<script>
-    const dfMessenger = document.querySelector('df-messenger');
-    dfMessenger.addEventListener('df-messenger-loaded', function (event) {
-        console.log('Messenger loaded');
-    });
-</script>
-<df-messenger intent="WELCOME" chat-title="Saylani-Chatbot" agent-id="6a6ee4e0-36f6-4dd5-b2ce-1ca7d3a77392"
-    language-code="en" chat-icon="saylani-logo-50x50.png"></df-messenger>
-
-
-
-
-<style>
-    df-messenger {
-        --df-messenger-bot-message: #878fac;
-        --df-messenger-button-titlebar-color: #63be59;
-        --df-messenger-chat-background-color: #fafafa;
-        --df-messenger-font-color: white;
-        --df-messenger-send-icon: #878fac;
-        --df-messenger-user-message: #63be59;
-    }
-</style>
 
 <body>
+
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"36d8411c6e4b59c54497c67fd0afc08d9","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
     
     <div class="page-wrapper">
         <!-- Preloader -->
@@ -146,7 +130,8 @@
                 </div>
             </nav><!-- Navbar end -->
         </header><!-- Header end -->
-
+<!-- 
+       
         <section id="home" class="home">
             <!-- Carousel -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -173,6 +158,7 @@
                 </div><!-- Carousel-inner end -->
             </div><!-- Carousel end -->
         </section>
+     
         
         <!-- Next Section -->
         <!-- <section id="next-section">
@@ -205,11 +191,10 @@
                         <img src="images/slider_img.jpg" alt="Construction">
                         <div class="overlay">
                             <div class="carousel-caption">
-                                <h3>We Empower Future Innovators</h3>
-                                <h1>SMIT IT Training</h1>
-                                <h1 class="second_heading">Free & Impactful</h1>
-                                <p>Join SMIT to master IT skills like Web Development and Graphic Design for free.
-                                    Transform your future with Saylani’s mission to create global software leaders.</p>
+                                <h3>Feeding Hope, Nourishing Lives</h3>
+                                <h1>Roti Bank</h1>
+                                <h1 class="second_heading">Saylani Welfare</h1>
+                                <p>Join us in our mission to provide food to those in need. Together, we can fight hunger and bring smiles to countless faces.</p>
                                 <a class="btn know_btn">know more</a>
                                 <a class="btn know_btn">view project</a>
                             </div>
@@ -219,11 +204,10 @@
                         <img src="images/slider_img2.jpg" alt="Construction">
                         <div class="overlay">
                             <div class="carousel-caption">
-                                <h3>Skills For Digital Careers</h3>
-                                <h1>SMIT Courses</h1>
-                                <h1 class="second_heading">Tech & Growth</h1>
-                                <p>Learn Web, Mobile, and Graphic Design skills with SMIT's free courses. Build your
-                                    future in Pakistan's growing tech industry with expert training.</p>
+                                <h3>Ending Hunger, One Meal at a Time</h3>
+                                <h1>Roti Bank Initiatives</h1>
+                                <h1 class="second_heading">Community Support</h1>
+                                <p>Be a part of Saylani Welfare's efforts to distribute meals and support underprivileged communities across Pakistan.</p>
                                 <a class="btn know_btn">know more</a>
                                 <a class="btn know_btn">view project</a>
                             </div>
@@ -233,11 +217,10 @@
                         <img src="images/slider_img3.jpg" alt="Construction">
                         <div class="overlay">
                             <div class="carousel-caption">
-                                <h3>Join Our Tech Community</h3>
-                                <h1>SMIT Network</h1>
-                                <h1 class="second_heading">Learn & Connect</h1>
-                                <p>Collaborate with peers, learn from experts, and build a strong professional network
-                                    at SMIT. Grow together in Pakistan's digital future.</p>
+                                <h3>Together We Can Make a Difference</h3>
+                                <h1>Join Roti Bank</h1>
+                                <h1 class="second_heading">Volunteer & Donate</h1>
+                                <p>Your contribution can change lives. Volunteer or donate to help us reach more people in need.</p>
                                 <a class="btn know_btn">know more</a>
                                 <a class="btn know_btn">view project</a>
                             </div>
@@ -512,9 +495,7 @@
                 </div>
             </div>
         </section><!-- Contact form end -->
-        <iframe style="border: none;" height="500px" width="400px"
-        src="https://widget.kommunicate.io/chat?appId=YOUR_APP_ID" allow="microphone; geolocation;">
-    </iframe>
+
 
         <!-- Footer -->
         <footer>
