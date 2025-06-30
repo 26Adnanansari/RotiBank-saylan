@@ -977,3 +977,58 @@ footer::after {
 
 
 }
+/* Reset default margins and ensure full-width sections */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Home section styling */
+#home {
+    height: 80vh; /* 60% of viewport height */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Carousel styling */
+.carousel {
+    height: 100%; /* Fill the parent section */
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%; /* Ensure carousel-inner takes full height */
+}
+
+/* Carousel item and image styling */
+.carousel-inner .item {
+    height: 100%; /* Match carousel height */
+    width: 100%;
+}
+
+.carousel-inner .item img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height of carousel */
+    object-fit: cover; /* Maintain aspect ratio, crop if needed */
+    object-position: center; /* Center the image */
+}
+
+/* Next section styling */
+#next-section {
+    width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5; /* Optional: distinguish the section */
+    margin-top: 0; /* Ensure no gap between sections */
+}
+
+/* Optional: Mobile responsiveness */
+@media (max-width: 768px) {
+    #home {
+        height: 50vh; /* Slightly smaller on mobile */
+    }
+}
